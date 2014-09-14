@@ -1,7 +1,4 @@
----
-title: "Peer Assessment 1"
-output: html_document
----
+###Peer Assessment 1
 
 ####Setting up the Environment
 For the first step in this analysis we clear the environment, set the working directory and load the appropriate libraries.
