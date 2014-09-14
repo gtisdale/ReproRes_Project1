@@ -136,7 +136,7 @@ for(i in seq_along(data.date.adj)){
 }
 ```
 
-Finally we plot the histogram and then compute the means and medians.
+Finally we plot the histogram and then compute the mean and median.
 
 ```r
 hist(step.count.adj,breaks=30,main="Histogram of Daily Step Count with Adjusted Data",ylim=c(0,20))
@@ -179,7 +179,7 @@ data.adj$worw[data.adj$dofw%in%weekday] <- "weekday"
 data.adj$worw <- as.factor(data.adj$worw)
 ```
 
-Then we split the data by interval and by da type and compute the means number of steps for each interval and day type.
+Then we split the data by interval and by type and compute the means number of steps for each interval and day type.
 
 ```r
 data.adj.interval <- split(data.adj,list(data.adj$interval,data.adj$worw))
